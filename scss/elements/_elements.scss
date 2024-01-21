@@ -1,0 +1,57 @@
+body {
+  font-size: var(--fs-text);
+  line-height: 1;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: var(--fw-regular);
+  color: var(--clr-black);
+}
+
+p,
+blockquote {
+  line-height: var(--lh-text);
+}
+
+button {
+  cursor: pointer;
+}
+
+span {
+  color: var(--clr-primary);
+}
+
+section,
+article {
+  padding: var(--pad) 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--fw-bold);
+}
+
+i {
+  pointer-events: none;
+  color: inherit;
+  vertical-align: middle;
+  font-size: inherit;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::placeholder {
+  opacity: 0.5;
+}
+
+input,
+textarea {
+  width: 100%;
+  &:focus {
+    outline: none;
+  }
+}

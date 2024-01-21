@@ -1,0 +1,30 @@
+.partners {
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--clr-white);
+    overflow: hidden;
+  }
+  &__content {
+    max-width: 600px;
+  }
+}
+
+@include adaptation('tablet-wide', max) {
+  .partners {
+    &__container {
+      text-align: center;
+      flex-direction: column-reverse;
+    }
+  }
+}

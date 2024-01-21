@@ -1,0 +1,31 @@
+.article {
+  &__title {
+    clear: both;
+    line-height: 2;
+    text-align: center;
+    &_big {
+      font-size: var(--fs-title);
+    }
+    &_middle {
+      color: var(--clr-primary);
+      font-size: var(--fs-ltl-title);
+    }
+    &_small {
+      font-size: var(--fs-link);
+    }
+  }
+  &__text {
+    padding-bottom: 15px;
+    line-height: 1.5;
+  }
+  &__image {
+    float: left;
+    margin-right: 10px;
+    width: min(35%, 250px);
+  }
+  &__line {
+    height: 2px;
+    background: var(--clr-gray);
+    margin: 3% 0px;
+  }
+}

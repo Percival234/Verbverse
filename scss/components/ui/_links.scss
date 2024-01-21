@@ -1,0 +1,9 @@
+.link {
+  color: var(--clr-primary);
+  text-decoration: underline;
+  transition: var(--transition);
+  &:hover,
+  &:active {
+    color: var(--clr-primary-hover);
+  }
+}

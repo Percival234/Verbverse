@@ -1,0 +1,55 @@
+:root {
+  // FONTS SIZES
+  --fs-text: 18px;
+  --fs-link: 20px;
+  --fs-ltl-title: 24px;
+  --fs-title: 40px;
+  // FONTS WEIGHT
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  // LINE HEIGHT
+  --lh-primary: 1;
+  --lh-text: 1.2;
+  // MAIN COLORS
+  --clr-primary: #9227a5;
+  --clr-primary-hover: #6e1d7c;
+  // --clr-primary: rgb(255, 92, 92);
+  // --clr-primary-hover: rgb(201, 66, 66);
+  // OTHER COLORS
+  --clr-white: rgb(255, 255, 255);
+  --clr-black: rgb(30, 30, 30);
+  --clr-red: rgb(200, 0, 0);
+  --clr-backdrop: rgba(0, 0, 0, 0.4);
+  --clr-gray: rgb(240, 240, 240);
+  --clr-gray-light: rgb(248, 248, 248);
+  --clr-gray-dark: rgb(215, 215, 215);
+  --clr-gray-extra-dark: rgb(135, 135, 135);
+  // GAP
+  --gap: 50px;
+  // PADDING
+  --pad: 70px;
+  // MARGIN
+  --margin-main: 125px;
+  // TRANSITION
+  --transition: 0.3s linear;
+  // BREAKPOINTS
+  @include adaptation('tablet-wide', max) {
+    --fs-title: 30px;
+    --pad: 50px;
+  }
+  @include adaptation('tablet', max) {
+    --fs-ltl-title: 22px;
+    --fs-text: 16px;
+    --fs-link: 18px;
+    --margin-main: 90px;
+    --gap: 30px;
+    --pad: 35px;
+  }
+  @include adaptation('phone-wide', max) {
+    --fs-title: 24px;
+    --fs-ltl-title: 18px;
+    --pad: 20px;
+    --margin-main: 70px;
+  }
+}

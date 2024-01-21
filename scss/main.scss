@@ -1,0 +1,92 @@
+//== Fonts ==//
+@import './generic/fonts';
+
+//== Tools ==//
+@import './tools/mixins';
+
+//== Variables ==//
+@import './settings/variables';
+
+//== Reset ==//
+@import './generic/reset';
+
+//== Elements ==//
+@import './elements/elements';
+
+//== Animations ==//
+@import './generic/animations';
+
+//== Wrapper ==//
+@import './components/wrapper/wrapper';
+
+//== Containers ==//
+@import './components/containers/containers';
+
+//== Header ==//
+@import './components/header/header';
+
+//== Menu ==//
+@import './components/menu/menu';
+
+//== Footer ==//
+@import './components/footer/footer';
+
+//== Process ==//
+@import './components/process/process';
+
+//== Main ==//
+@import './components/main/main';
+
+//== UI ==//
+@import './components/ui/titles';
+@import './components/ui/buttons';
+@import './components/ui/lists';
+@import './components/ui/links';
+@import './components/ui/icons';
+
+//====== SECTIONS ======//
+
+//== Introduction ==//
+@import './components/sections/introduction';
+
+//== Language ==//
+@import './components/sections/language';
+
+//== Test ==//
+@import './components/sections/test';
+
+//== Plan ==//
+@import './components/sections/plan';
+
+//== Top ==//
+@import './components/sections/pricing';
+
+//== Advantages ==//
+@import './components/sections/advantages';
+
+//== Ceremony ==//
+@import './components/sections/ceremony';
+
+//== Article ==//
+@import './components/sections/article';
+
+//== About ==//
+@import './components/sections/about';
+
+//== Ceremony ==//
+@import './components/sections/ceremony';
+
+//== Register ==//
+@import './components/sections/register';
+
+//== Partners ==//
+@import './components/sections/partners';
+
+//== Team ==//
+@import './components/sections/team';
+
+//== Reviews ==//
+@import './components/sections/reviews';
+
+//== FAQ ==//
+@import './components/sections/faq';

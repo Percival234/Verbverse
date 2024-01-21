@@ -1,0 +1,25 @@
+.test {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__content {
+    max-width: 600px;
+  }
+}
+
+@include adaptation('tablet-small', max) {
+  .test {
+    &__container {
+      flex-direction: column;
+    }
+    &__image-container {
+      max-width: 250px;
+    }
+    &__content {
+      text-align: center;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.pricing {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__item {
+    display: flex;
+    &:nth-of-type(2) {
+      transform: translateX(-50%);
+    }
+  }
+  &__image-container {
+    position: relative;
+    flex: 1 0 100%;
+    min-height: 350px;
+  }
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  &__card {
+    padding: 40px;
+    flex: 1 0 45%;
+  }
+  &__card-line {
+    height: 2px;
+    background: var(--clr-gray);
+  }
+  &__price-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &__price {
+    text-align: center;
+    font-size: 24px;
+  }
+  &__cost {
+    color: var(--clr-primary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-title);
+  }
+}
+
+@include adaptation('tablet-wide', max) {
+  .pricing {
+    &__item {
+      flex-direction: column;
+      &:nth-of-type(2) {
+        flex-direction: column-reverse;
+        transform: translateX(0%);
+      }
+    }
+    &__card {
+      padding: 25px;
+    }
+  }
+}
+
+@include adaptation('phone-wide', max) {
+  .pricing {
+    &__card {
+      padding: 15px;
+    }
+    .button {
+      width: 100%;
+    }
+    &__image-container {
+      min-height: 200px;
+    }
+    &__price-info {
+      flex-direction: column;
+    }
+  }
+}

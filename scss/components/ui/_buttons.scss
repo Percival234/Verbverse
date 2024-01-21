@@ -1,0 +1,18 @@
+.button {
+  position: relative;
+  width: 200px;
+  text-align: center;
+  display: block;
+  color: var(--clr-white);
+  font-size: var(--fs-link);
+  font-weight: var(--fw-middle);
+  padding: 11px 25px;
+  background: var(--clr-primary);
+  border: 2px solid var(--clr-primary);
+  transition: var(--transition);
+  &:hover,
+  &:active {
+    background: transparent;
+    color: var(--clr-primary);
+  }
+}

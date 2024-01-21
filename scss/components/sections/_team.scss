@@ -1,0 +1,126 @@
+.team {
+  padding: 0px;
+  background: var(--clr-gray-light);
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__slider {
+    display: flex;
+    position: relative;
+    max-width: 750px;
+    padding: 20px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      height: 100%;
+      width: 70vw;
+      background: var(--clr-gray);
+    }
+  }
+  &__list {
+    position: relative;
+    display: flex;
+    transition: var(--transition);
+  }
+  &__slider-line {
+    overflow: hidden;
+  }
+  &__item {
+    flex: 1 0 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  &__image {
+    width: 275px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__item-info {
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary);
+  }
+  &__item-data {
+    display: inline-block;
+    font-weight: var(--fw-regular);
+    color: var(--clr-black);
+    text-transform: none;
+  }
+  &__quote {
+    font-style: italic;
+  }
+  &__button {
+    line-height: 1;
+    width: 50px;
+    aspect-ratio: 1;
+    font-size: var(--fs-link);
+    background: var(--clr-white);
+    color: var(--clr-primary);
+    position: absolute;
+    right: 20px;
+    border-radius: 50%;
+    z-index: 50;
+    transition: var(--transition);
+    &:hover,
+    &:active {
+      background: var(--clr-primary);
+      color: var(--clr-white);
+    }
+  }
+}
+
+@include adaptation('desktop', max) {
+  .team {
+    background: var(--clr-white);
+    padding: 50px 0px;
+    &__container {
+      flex-direction: column;
+    }
+    &__content {
+      text-align: center;
+    }
+    &__slider {
+      max-width: 100%;
+      padding: 20px;
+      &::before {
+        background: var(--clr-gray-light);
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include adaptation('tablet', max) {
+  .team {
+    padding: 35px 0px;
+    font-size: 14px;
+    &__info {
+      gap: 5px;
+    }
+    &__image {
+      width: 180px;
+    }
+    &__button {
+      width: 40px;
+      right: 10px;
+    }
+  }
+}
+
+@include adaptation('phone-wide', max) {
+  .team {
+    padding: 20px 0px;
+    &__item {
+      flex-direction: column;
+    }
+    &__info {
+      align-items: center;
+    }
+  }
+}
