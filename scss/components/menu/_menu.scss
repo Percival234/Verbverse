@@ -44,16 +44,3 @@
     }
   }
 }
-
-@include adaptation('tablet', max) {
-  .menu {
-    &__list {
-      padding: 20px 0px;
-      & li:last-of-type {
-        display: block;
-        background: var(--clr-primary);
-        color: var(--clr-white);
-      }
-    }
-  }
-}

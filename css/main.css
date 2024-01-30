@@ -9,8 +9,8 @@
   --fw-bold: 700;
   --lh-primary: 1;
   --lh-text: 1.2;
-  --clr-primary: #9227a5;
-  --clr-primary-hover: #6e1d7c;
+  --clr-primary: rgb(146, 39, 165);
+  --clr-primary-hover: rgb(110, 29, 124);
   --clr-white: rgb(255, 255, 255);
   --clr-black: rgb(30, 30, 30);
   --clr-red: rgb(200, 0, 0);
@@ -430,16 +430,6 @@ textarea:focus {
   }
   .menu__link {
     padding: 15px 20px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .menu__list {
-    padding: 20px 0px;
-  }
-  .menu__list li:last-of-type {
-    display: block;
-    background: var(--clr-primary);
-    color: var(--clr-white);
   }
 }
 .footer {
@@ -941,11 +931,8 @@ textarea:focus {
   }
 }
 .register {
-  padding: 40px;
-  background: url("../../../img/trapezium.svg");
-  background-size: cover;
-  background-position-x: -700px;
-  background-repeat: no-repeat;
+  padding: 0px;
+  background: var(--clr-primary-hover);
   position: relative;
 }
 .register__image-container {
@@ -954,7 +941,7 @@ textarea:focus {
   top: 0;
   bottom: 0;
   right: 0;
-  z-index: -1;
+  z-index: 1;
 }
 .register__image {
   object-fit: cover;
@@ -965,10 +952,11 @@ textarea:focus {
   display: flex;
 }
 .register__form {
-  border: 15px solid var(--clr-primary-hover);
+  border: 30px solid var(--clr-primary-hover);
   background: var(--clr-white);
   padding: 40px;
   max-width: 530px;
+  z-index: 20;
 }
 .register .button {
   width: 100%;
@@ -1001,7 +989,6 @@ textarea:focus {
 @media only screen and (max-width: 1023px) {
   .register {
     padding: 20px 0px;
-    background: var(--clr-primary-hover);
   }
   .register__container {
     justify-content: center;

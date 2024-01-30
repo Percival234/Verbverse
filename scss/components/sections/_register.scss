@@ -1,9 +1,6 @@
 .register {
-  padding: 40px;
-  background: url('../../../img/trapezium.svg');
-  background-size: cover;
-  background-position-x: -700px;
-  background-repeat: no-repeat;
+  padding: 0px;
+  background: var(--clr-primary-hover);
   position: relative;
   &__image-container {
     position: absolute;
@@ -11,7 +8,7 @@
     top: 0;
     bottom: 0;
     right: 0;
-    z-index: -1;
+    z-index: 1;
   }
   &__image {
     object-fit: cover;
@@ -22,10 +19,11 @@
     display: flex;
   }
   &__form {
-    border: 15px solid var(--clr-primary-hover);
+    border: 30px solid var(--clr-primary-hover);
     background: var(--clr-white);
     padding: 40px;
     max-width: 530px;
+    z-index: 20;
   }
   .button {
     width: 100%;
@@ -59,7 +57,6 @@
 @include adaptation('tablet-wide', max) {
   .register {
     padding: 20px 0px;
-    background: var(--clr-primary-hover);
     &__container {
       justify-content: center;
     }
