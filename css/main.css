@@ -9,8 +9,8 @@
   --fw-bold: 700;
   --lh-primary: 1;
   --lh-text: 1.2;
-  --clr-primary: rgb(146, 39, 165);
-  --clr-primary-hover: rgb(110, 29, 124);
+  --clr-primary: rgb(144, 40, 165);
+  --clr-primary-hover: rgb(110, 30, 125);
   --clr-white: rgb(255, 255, 255);
   --clr-black: rgb(30, 30, 30);
   --clr-red: rgb(200, 0, 0);
@@ -90,6 +90,10 @@ ol {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -396,9 +400,6 @@ textarea:focus {
   justify-content: flex-end;
   gap: 25px;
 }
-.menu__list li:last-of-type {
-  display: none;
-}
 .menu__link {
   display: block;
   padding: 5px;
@@ -513,6 +514,7 @@ textarea:focus {
   text-align: center;
   display: block;
   color: var(--clr-white);
+  white-space: nowrap;
   font-size: var(--fs-link);
   font-weight: var(--fw-middle);
   padding: 11px 25px;

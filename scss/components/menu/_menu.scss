@@ -4,9 +4,6 @@
     display: flex;
     justify-content: flex-end;
     gap: 25px;
-    & li:last-of-type {
-      display: none;
-    }
   }
   &__link {
     display: block;
